@@ -1,5 +1,6 @@
 import React from 'react';
-import image1 from '../../assets/CAM-65624_Luck-Casino-8_Teaser-mock-up-1657014102382_tcm1841-387549.jpg'
+import { LuGamepad2 } from 'react-icons/lu';
+import image1 from '../../assets/CAM-65624_Luck-Casino-8_Teaser-mock-up-1657014102382_tcm1841-387549.jpg';
 import image2 from '../../assets/Screenshot 2023-08-17 161846.png'
 import image3 from '../../assets/main-qimg-47c0a20d5465a82060a965ac30c3cc30-lq.jpeg'
 import image4 from '../../assets/mega-wheel-live-tile.jpg'
@@ -33,7 +34,13 @@ const Slot = () => {
         },
     ]
     return (
-        <div className=" grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-5">
+      <div>
+         <div className='flex items-center'>
+                        <span className='text-3xl mr-2'><LuGamepad2 /></span>
+                        <span className='text-2xl mr-4 font-bold'>Slots</span>
+                        <p className='my-5'>by Yebet</p>
+                    </div>
+          <div className=" grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5">
         {
             inhouseCasino.map((data, index) =>
               <div>
@@ -51,6 +58,7 @@ const Slot = () => {
               </div>
             )
         }
+      </div>
       </div>
     );
 };

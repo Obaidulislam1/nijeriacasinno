@@ -1,13 +1,15 @@
 import React from 'react';
-import image1 from '../../assets/CAM-65624_Luck-Casino-8_Teaser-mock-up-1657014102382_tcm1841-387549.jpg'
+import image1 from '../../assets/CAM-65624_Luck-Casino-8_Teaser-mock-up-1657014102382_tcm1841-387549.jpg';
+import image from '../../assets/blackjack-cards.png';
+
 import image2 from '../../assets/Screenshot 2023-08-17 161846.png'
-import image3 from '../../assets/main-qimg-47c0a20d5465a82060a965ac30c3cc30-lq.jpeg'
-import image4 from '../../assets/mega-wheel-live-tile.jpg'
-import image5 from '../../assets/png-transparent-ludo-dice-dice-game-dice-online-casino-thumbnail-removebg-preview.png'
-import image6 from '../../assets/sexy-gaming-fb.jpg'
-import image7 from '../../assets/CAM-65624_Luck-Casino-8_Teaser-mock-up-1657014102382_tcm1841-387549.jpg'
-import image8 from '../../assets/main-qimg-47c0a20d5465a82060a965ac30c3cc30-lq.jpeg'
-import image9 from '../../assets/mega-wheel-live-tile.jpg'
+import image3 from '../../assets/main-qimg-47c0a20d5465a82060a965ac30c3cc30-lq.jpeg';
+import image4 from '../../assets/mega-wheel-live-tile.jpg';
+import image5 from '../../assets/png-transparent-ludo-dice-dice-game-dice-online-casino-thumbnail-removebg-preview.png';
+import image6 from '../../assets/sexy-gaming-fb.jpg';
+import image7 from '../../assets/CAM-65624_Luck-Casino-8_Teaser-mock-up-1657014102382_tcm1841-387549.jpg';
+import image8 from '../../assets/main-qimg-47c0a20d5465a82060a965ac30c3cc30-lq.jpeg';
+import image9 from '../../assets/mega-wheel-live-tile.jpg';
 
 const LiveCasino = () => {
     const LiveCasino = [
@@ -37,7 +39,13 @@ const LiveCasino = () => {
         },
     ]
     return (
-        <div className=" grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-5">
+       <div>
+        <div className='flex items-center'>
+                        <img src={image} alt="" className='w-7 mr-2' />
+                        <p className='my-5 text-2xl font-bold'>LIVE CASINO
+                        </p>
+                    </div>
+         <div className=" grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5">
         {
             LiveCasino.map((data, index) =>
               <div>
@@ -56,6 +64,7 @@ const LiveCasino = () => {
             )
         }
       </div>
+       </div>
     );
 };
 

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
@@ -27,116 +28,92 @@ const Footer = () => {
                 <rect x="14" y="11" width="7" height="12" />
               </svg>
               <span className="ml-2 text-xl font-bold tracking-wide uppercase">
-                Company
+              oneplayzone
               </span>
             </a>
             <div className="mt-4 lg:max-w-sm">
               <p className="text-sm">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam rem aperiam.
+              Oneplayzone is committed to using technology to create fair games, the seed algorithm is open and transparent, and all games can be verified. We put the user experience in an important position, so that you can have a good time and earn peace of mind.
               </p>
-              <p className="mt-4 text-sm">
+              {/* <p className="mt-4 text-sm">
                 Eaque ipsa quae ab illo inventore veritatis et quasi architecto
                 beatae vitae dicta sunt explicabo.
-              </p>
+              </p> */}
             </div>
           </div>
           <div className="grid grid-cols-2 gap-5 row-gap-8 lg:col-span-4 md:grid-cols-4">
             <div>
-              <p className="font-semibold tracking-wide">
-                Category
-              </p>
               <ul className="mt-2 space-y-2">
                 <li>
-                  <a
-                    href="/"
+                  <Link
+                    to='/helpCenter/termsOfService'
                     className=" transition-colors duration-300 hover:text-deep-purple-accent-400"
                   >
-                    News
-                  </a>
+                    Term Of Service
+                  </Link>
                 </li>
                 <li>
                   <a
                     href="/"
                     className=" transition-colors duration-300 hover:text-deep-purple-accent-400"
                   >
-                    World
+                    Privacy Policy
                   </a>
                 </li>
                 <li>
-                  <a
-                    href="/"
-                    className=" transition-colors duration-300 hover:text-deep-purple-accent-400"
-                  >
-                    Games
-                  </a>
+                  <Link
+                    to='/helpCenter/bonusTerms'
+                    className=" transition-colors duration-300 hover:text-deep-purple-accent-400">
+                    Bonus Terms
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="/"
+                  <Link
+                    to='/helpCenter/selfExclution'
                     className=" transition-colors duration-300 hover:text-deep-purple-accent-400"
                   >
-                    References
-                  </a>
+                    Self-Exclusion Policy
+                  </Link>
                 </li>
               </ul>
             </div>
             <div>
-              <p className="font-semibold tracking-wide">
-                Business
-              </p>
               <ul className="mt-2 space-y-2">
                 <li>
-                  <a
-                    href="/"
+                  <Link
+                    to='/helpCenter/kyc'
                     className=" transition-colors duration-300 hover:text-deep-purple-accent-400"
                   >
-                    Web
-                  </a>
+                    Oneplayzone KYC Policy
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="/"
+                  <Link
+                    to='/helpCenter/responsibleGaming'
                     className=" transition-colors duration-300 hover:text-deep-purple-accent-400"
                   >
-                    eCommerce
-                  </a>
+                    Responsible Gaming
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="/"
+                  <Link
+                    to='/helpCenter/amlpolicy'
                     className=" transition-colors duration-300 hover:text-deep-purple-accent-400"
                   >
-                    Business
-                  </a>
+                    AML Policy
+                  </Link>
                 </li>
-                <li>
-                  <a
-                    href="/"
-                    className=" transition-colors duration-300 hover:text-deep-purple-accent-400"
-                  >
-                    Entertainment
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/"
-                    className=" transition-colors duration-300 hover:text-deep-purple-accent-400"
-                  >
-                    Portfolio
-                  </a>
-                </li>
+                
               </ul>
             </div>
             <div>
-              <p className="font-semibold tracking-wide">Apples</p>
               <ul className="mt-2 space-y-2">
                 <li>
                   <a
                     href="/"
                     className=" transition-colors duration-300 hover:text-deep-purple-accent-400"
                   >
-                    Media
+                    {/* Media */}
                   </a>
                 </li>
                 <li>
@@ -145,7 +122,7 @@ const Footer = () => {
                     className=" transition-colors duration-300 hover:text-deep-purple-accent-400"
                   >
                     {/* hello */}
-                    Brochure
+                    {/* Brochure */}
                   </a>
                 </li>
                 <li>
@@ -153,7 +130,7 @@ const Footer = () => {
                     href="/"
                     className=" transition-colors duration-300 hover:text-deep-purple-accent-400"
                   >
-                    Nonprofit
+                    {/* Nonprofit */}
                   </a>
                 </li>
                 <li>
@@ -161,7 +138,7 @@ const Footer = () => {
                     href="/"
                     className=" transition-colors duration-300 hover:text-deep-purple-accent-400"
                   >
-                    Educational
+                    {/* Educational */}
                   </a>
                 </li>
                 <li>
@@ -169,44 +146,21 @@ const Footer = () => {
                     href="/"
                     className=" transition-colors duration-300 hover:text-deep-purple-accent-400"
                   >
-                    Projects
+
+                    {/* Projects */}
                   </a>
                 </li>
               </ul>
             </div>
             <div>
-              <p className="font-semibold tracking-wide">Cherry</p>
+              <p className="font-semibold tracking-wide">Contact Us</p>
               <ul className="mt-2 space-y-2">
                 <li>
                   <a
                     href="/"
                     className=" transition-colors duration-300 hover:text-deep-purple-accent-400"
                   >
-                    Infopreneur
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/"
-                    className=" transition-colors duration-300 hover:text-deep-purple-accent-400"
-                  >
-                    Personal
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/"
-                    className=" transition-colors duration-300 hover:text-deep-purple-accent-400"
-                  >
-                    Wiki
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/"
-                    className=" transition-colors duration-300 hover:text-deep-purple-accent-400"
-                  >
-                    Forum
+                    Email: support@yebet.com
                   </a>
                 </li>
               </ul>
@@ -215,7 +169,7 @@ const Footer = () => {
         </div>
         <div className="flex flex-col justify-between pt-5 pb-10 border-t sm:flex-row">
           <p className="text-sm ">
-            © Copyright 2020 Lorem Inc. All rights reserved.
+            © 2023 Oneplayzone All Rights Reserved.
           </p>
           <div className="flex items-center mt-4 space-x-4 sm:mt-0">
             <a

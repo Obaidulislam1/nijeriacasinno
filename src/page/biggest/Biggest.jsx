@@ -64,8 +64,8 @@ const Biggest = () => {
               <tr key={index}>
               <td>
                 <div className="flex items-center space-x-3">
-                  <div className="avatar">
-                    <div className="mask mask-squircle w-12 h-12">
+                  <div >
+                    <div className="w-12 h-12">
                       {index + 1}
                     </div>
                   </div>
@@ -99,8 +99,8 @@ const Biggest = () => {
               <tr key={index}>
               <td>
                 <div className="flex items-center space-x-3">
-                  <div className="avatar">
-                    <div className="mask mask-squircle w-12 h-12">
+                  <div>
+                    <div className="w-12 h-12">
                       {table.game}
                     </div>
                   </div>

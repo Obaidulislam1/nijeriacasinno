@@ -1,0 +1,39 @@
+.cards{
+    height: 20vh;
+}
+
+
+
+.cards .card{
+max-width: 25rem;
+max-height: 10rem;
+border-radius: .5rem;
+position: absolute;
+pointer-events: none;
+opacity: 0;
+animation: animate 15s infinite linear;
+animation-delay: calc(3s * var(--delay));
+}
+
+.cards .card:last-child{
+animation-delay: calc(-3s * var(--delay));
+}
+@keyframes animate {
+    0%{
+        opacity: 0;
+        transform: translateY(100%) scale(1);
+    }5%,20%{
+        opacity: 0.4;
+        transform: translateY(100%) scale(0.7);
+    }25%,40%{
+        opacity: 1;
+        pointer-events: all;
+        transform: translateY(0%) scale(1);
+    }45%,60%{
+        opacity: 0.4;
+        transform: translateY(-100%) scale(0.7);
+    }65%,100%{
+        opacity: 0;
+        transform: translateY(-100%) scale(0.5);
+    }
+}
